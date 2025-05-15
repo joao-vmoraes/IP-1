@@ -36,7 +36,7 @@ int main(){
             break;
         
         default:
-        printf("Até logo!");
+            printf("Até logo!");
             return 0;
         }
     }
