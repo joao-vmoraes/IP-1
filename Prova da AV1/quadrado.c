@@ -1,4 +1,4 @@
-//desenhar um quadrado de lado x e sua diagonal 
+//desenhar um quadrado de lado x e suas diagonais
 //linha = l, coluna = c
 #include <stdio.h>
 
