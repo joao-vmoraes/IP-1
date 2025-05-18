@@ -5,12 +5,12 @@
 int main(void){
     srand(time(NULL));
 
-    int tentativas = 0,  chute, numero = rand() % 101;
+    int tentativas = 0,  chute, numero = rand() % 51;
 
     while (1)
     {
         printf("=======================================\n");
-        printf("Tente adivinhar um numero entre 0 a 100: \n");
+        printf("Tente adivinhar um numero entre 0 a 50: \n");
         scanf("%i", &chute);
 
         if (chute == numero)
