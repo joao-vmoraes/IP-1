@@ -17,7 +17,7 @@ int main(void){
             break;}
         
         else if(numero_base == 0){
-            printf("\nA raiz de %i é %i", numero, sub);
+            printf("\nA raiz de %i é : %i", numero, sub);
             break;}
         
     }
