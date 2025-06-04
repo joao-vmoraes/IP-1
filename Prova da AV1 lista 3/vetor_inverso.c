@@ -14,4 +14,6 @@ int main(){
     {
         printf("%i,", vetor[indice]);
     }
+
+    return 0;
 }

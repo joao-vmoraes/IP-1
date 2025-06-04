@@ -22,4 +22,5 @@ int main(){
     }
 
     printf("a media foi: %.2f  e a quantidade de numeros acima dela foi: %i ", media, acima_media);
+    return 0;
 }

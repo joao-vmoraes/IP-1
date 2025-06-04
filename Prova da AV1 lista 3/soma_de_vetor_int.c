@@ -13,4 +13,6 @@ int main(){
     }
     printf("================");
     printf("\n Soma dos elementos do Vetor: %i", soma);
+
+    return 0;
 }

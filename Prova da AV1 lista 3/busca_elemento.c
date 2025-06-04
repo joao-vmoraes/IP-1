@@ -26,4 +26,6 @@ int main(){
     if (igualdade == 0){
         printf(" o numero %i nao foi encontrado no vetor!", indentificador);
     }
+
+    return 0;
 }
