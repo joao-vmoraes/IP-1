@@ -34,15 +34,16 @@ float divisao(float numero1, float numero2)
 }
 
 int main(){
+    int    continuar = 1;
     float numero1, numero2;
     char operador;
 
-    while (1){
+    while (continuar == 1){
         printf("\n=== CALCULADORA ===\n");
         printf("faca seu calculo:\n");
         printf(">>> ");
-        scanf("%f %c %f", &numero1, &operador, &numero2);
         getchar();
+        scanf("%f %c %f", &numero1, &operador, &numero2);
 
 
         switch (operador)
@@ -63,6 +64,8 @@ int main(){
         default:
             break;
         }
+        printf("\nDeseja continuar? [1- sim / 2 - nao] ");
+        scanf("%i", &continuar);
     }
 
     return  0;
