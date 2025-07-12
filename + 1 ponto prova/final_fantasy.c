@@ -6,14 +6,16 @@
 typedef struct
 {
     char nome[10];
-    int defesa;
-    int ataque;
-    int vida;
+    float defesa; // 0 a 10
+    float ataque; // 0 a 10
+    float vida; // 0 a 100
+    float precisao;
 }Jogador;
 
 
-int main(void){
-    Jogador jogadores_time1[2];
-    Jogador jogadores_time2[2];
+
+int ain(void){
+
+    Jogador jogadores_time[2][2]; // cada linha é um time e cada coluna é um jogador referente a linha;
     return 0;
 }
