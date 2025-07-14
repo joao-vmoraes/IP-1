@@ -5,6 +5,8 @@
 #include <unistd.h> 
 int tam = 2, id = 1;
 
+//o jogo foi projetado para ter apenas um vencedor. Coloquei para os atributos minimos tanto de ataque como defesa ser 5, e o maximo do ataque ser 10 e defesa 9, e a vida varia de 70 at[e 100. Mudei um pouco a formula da precisao do ataque pois ela era um pouco irrealista em alguns casos, coloquei uma formua que tem peso principalmente para a quantidade de ataque que o personagem possui.Alem de colocar um sleep(tempo) com parametro tempo = 5 que pode ser mudado nas variaveis do main(), coloquei esse tempo para o jogo se tornar um pouco mais "cadenciado", ao inves de apertar um botao e o jogo ja terminar.
+
 typedef struct
 {
     char nome[10];
@@ -25,7 +27,7 @@ void criarJogador(Jogador *a,int i, int c, int id) // funcao de cirando jogador 
     a->defesa = 5 + rand()%5;
     a->vida = 70 + rand()%31;
     a->id = id;
-    a->precisao = 1 - (a->vida * a->ataque)/4000;
+    a->precisao = 1;
     printf("ataque do jogador: %.1f\n", a->ataque);
     printf("defesa do jogador: %.1f\n", a->defesa);
     printf("vida do jogador: %.1f\n", a->vida);
@@ -48,7 +50,7 @@ void criar_times()  // funcao para criar os times
 }
 void listar_oponentes(int i)  // cfuncao para listar os oponentes
 {   
-    printf("====== oponentes ======\n");
+    printf(" ===== OPONENTES =====\n");
     if (i == 0)
     {
         for (int k = 1 ; k == 1; k++)
@@ -199,7 +201,7 @@ void jogar(int *vez_de_jogar)
 
 int main(void){
     srand(time(NULL));
-    int tempo = 1, i = 0 , vez_de_jogar = rand() % 2, oponente;
+    int tempo = 5, i = 0 , vez_de_jogar = rand() % 2, oponente;
     char _;
     printf("====== INICIO DO JOGO ======\n");
     printf("=-=-=- Final Fantasy 1 =-=-=-\n");
